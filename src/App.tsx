@@ -16,7 +16,7 @@ const LANGUAGE_LABELS: Record<Language, string> = {
 const TRANSLATIONS = {
   en: {
     navHome: "Home",
-    navAbout: "About",
+    navAbout: "Espaço",
     navMenu: "Menu",
     navContact: "Contact",
     languageLabel: "Language:",
@@ -564,11 +564,11 @@ function App() {
 
           <div>
             <h4 className="text-xs tracking-[0.28em] uppercase text-[color:var(--sage)] mb-5">{t("footerFindUs")}</h4>
-            <div className="relative w-full h-44 overflow-hidden border border-border/60">
+            <div className="relative w-full h-44 overflow-hidden border border-border/60 bg-[#121212]">
               <iframe
                 title="Cutlery location map"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-8.6270%2C41.1440%2C-8.6060%2C41.1530&layer=mapnik&marker=41.1470%2C-8.6110"
-                className="w-full h-full border-0"
+                className="w-full h-full border-0 filter grayscale brightness-75 contrast-110"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
@@ -579,7 +579,7 @@ function App() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 mt-16 pt-6 border-t border-border/40 flex flex-wrap items-center justify-between gap-3 text-xs tracking-[0.18em] uppercase text-foreground/50">
           <span>© {new Date().getFullYear()} Cutlery, Porto</span>
           <span>
-            {t("footerCrafted")} <a href="https://zertixstudio.com" target="_blank" rel="noreferrer" className="text-[color:var(--gold)] hover:text-[color:var(--primary-foreground)]">{t("footerPromo")}</a>
+            {t("footerCrafted")} <a href="https://zertix-studio.vercel.app/" target="_blank" rel="noreferrer" className="text-[color:var(--gold)] underline underline-offset-2 hover:text-[color:var(--primary-foreground)]">{t("footerPromo")}</a>
           </span>
         </div>
       </footer>
