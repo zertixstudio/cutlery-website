@@ -566,10 +566,11 @@ function App() {
             <h4 className="text-xs tracking-[0.28em] uppercase text-[color:var(--sage)] mb-5">{t("footerFindUs")}</h4>
             <div className="relative w-full h-44 overflow-hidden border border-border/60">
               <iframe
-                title="Cutlery location in Porto"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-8.617%2C41.144%2C-8.605%2C41.150&layer=mapnik&marker=41.147%2C-8.611"
-                className="w-full h-full grayscale opacity-80"
+                title="Cutlery location map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-8.6270%2C41.1440%2C-8.6060%2C41.1530&layer=mapnik&marker=41.1470%2C-8.6110"
+                className="w-full h-full border-0"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
           </div>
