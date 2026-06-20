@@ -579,7 +579,7 @@ function App() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 mt-16 pt-6 border-t border-border/40 flex flex-wrap items-center justify-between gap-3 text-xs tracking-[0.18em] uppercase text-foreground/50">
           <span>© {new Date().getFullYear()} Cutlery, Porto</span>
           <span>
-            {t("footerCrafted")} <a href="https://zertix-studio.vercel.app/" target="_blank" rel="noreferrer" className="text-[color:var(--gold)] underline underline-offset-2 hover:text-[color:var(--primary-foreground)]">{t("footerPromo")}</a>
+            {t("footerCrafted")} <a href="https://zertixstudio.com/" target="_blank" rel="noreferrer" className="text-[color:var(--gold)] underline underline-offset-2 hover:text-[color:var(--primary-foreground)]">{t("footerPromo")}</a>
           </span>
         </div>
       </footer>
